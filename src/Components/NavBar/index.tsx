@@ -1,10 +1,10 @@
 import { animateScroll as scroll } from "react-scroll";
-import { BurguerMenu, Container, Logo, Menu, NavContent } from "./style";
-import { Navigation } from "./navigation";
+import { BurguerMenu, NavContainer, Logo, Menu, NavContent } from "./style";
+import { Navigation } from "./Navigation";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const NavBar = () => {
+export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -13,7 +13,7 @@ const NavBar = () => {
         scroll.scrollToTop();
     };
     return (
-        <Container className="nav" id="navbar" isOpen={isOpen}>
+        <NavContainer className="nav" id="navbar" isOpen={isOpen}>
             <NavContent className="nav-content">
                 <Logo
                     className="nav-logo"
@@ -26,8 +26,6 @@ const NavBar = () => {
                     <Navigation onClick={toggleMenu} />
                 </Menu>
             </NavContent>
-        </Container>
+        </NavContainer>
     );
 }
-
-export default NavBar;

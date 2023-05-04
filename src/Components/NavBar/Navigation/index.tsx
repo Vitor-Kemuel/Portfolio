@@ -1,5 +1,4 @@
-// import React, { useState } from 'react';
-import { SelectNavigation } from '../../../types';
+import { SelectNavigation } from '../../../Types';
 import { NavItem } from './style';
 import { Link } from 'react-scroll';
 

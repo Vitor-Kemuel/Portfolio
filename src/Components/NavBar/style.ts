@@ -6,7 +6,7 @@ export const Logo = styled.h3`
     color: #000;
     padding: 5px 10px;
 `
-export const Container = styled.nav<{ isOpen: boolean }>`
+export const NavContainer = styled.nav<{ isOpen: boolean }>`
     background-color: ${({ isOpen }) => (isOpen ? "rgb(240, 240, 240)" : "rgba(240, 240, 240, 0)")};
     position: sticky;
     top: 0px;
