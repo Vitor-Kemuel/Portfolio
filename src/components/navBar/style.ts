@@ -6,8 +6,8 @@ export const Logo = styled.h3`
     color: #000;
     padding: 5px 10px;
 `
-export const Container = styled.nav`
-    background-color: rgb(240, 240, 240);
+export const Container = styled.nav<{ isOpen: boolean }>`
+    background-color: ${({ isOpen }) => (isOpen ? "rgb(240, 240, 240)" : "rgba(240, 240, 240, 0)")};
     position: sticky;
     top: 0px;
     width: 100%;
@@ -25,13 +25,6 @@ export const NavContent = styled.div`
     align-items: center;
     height: 100%;
 `
-export const NavItems = styled.ul`
-    @media screen and (max-width: 760px){
-        &{
-            display: none;
-        }
-    }
-`
 export const BurguerMenu = styled.button<{ isOpen: boolean }>`
     display: none;
     flex-direction: column;
@@ -42,19 +35,22 @@ export const BurguerMenu = styled.button<{ isOpen: boolean }>`
         display: flex;
     }
 `;
-export const Menu = styled.div<{ isOpen: boolean }>`
-  display: flex;
-  justify-content: flex-start;
+export const Menu = styled.ul<{ isOpen: boolean }>`
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-    width: 100%;
-    transition: all 0.3s ease-out-in;
-    background-color: rgb(240, 240, 240);
-    top: 10vh;
-    height: 90vh;
-  }
+    @media (max-width: 768px) {
+        transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: ${({ isOpen }) => (isOpen ? "0" : "100%")}; // aqui mudamos de left para right
+        width: 100%;
+        background-color: rgb(240, 240, 240);
+        top: 10vh;
+        height: 90vh;
+    }
 `;
+

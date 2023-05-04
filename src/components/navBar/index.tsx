@@ -13,7 +13,7 @@ const NavBar = () => {
         scroll.scrollToTop();
     };
     return (
-        <Container className="nav" id="navbar">
+        <Container className="nav" id="navbar" isOpen={isOpen}>
             <NavContent className="nav-content">
                 <Logo
                     className="nav-logo"
