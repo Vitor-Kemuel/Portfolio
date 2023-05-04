@@ -10,12 +10,13 @@ import {
     CardDescription,
     CardIcon,
     RowCards,
+    ArrowDown,
 } from "./styles";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import { GoRepo } from "react-icons/go";
 
 const Projects = () => (
-    <PageContainer>
+    <PageContainer id="Projects">
         <Column>
             <Row>
                 <Title>{"<Projects />"}</Title>
@@ -90,12 +91,9 @@ const Projects = () => (
                     </CardDescription>
                 </CardProject>
             </RowCards>
-            <Space />
-            <Space />
-            <Space />
-            <About>
+            <ArrowDown>
                 <AiOutlineArrowDown />
-            </About>
+            </ArrowDown>
         </Column>
     </PageContainer>
 );

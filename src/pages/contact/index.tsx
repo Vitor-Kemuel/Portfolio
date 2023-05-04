@@ -1,9 +1,9 @@
-import { About, Column, Copyright, Email, IconContainer, PageContainer, Row, Space, Title } from "./styles";
+import { About, Column, Copyright, Email, IconContainer, PageContainer, Row, Title } from "./styles";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const Contact = () => {
     return(
-        <PageContainer>
+        <PageContainer id="Contact">
             <Column>
                 <Row>
                     <Title>{"<Contato />"}</Title>
@@ -27,7 +27,6 @@ const Contact = () => {
                         <AiFillLinkedin />
                     </IconContainer>
                 </Row>
-                <Space/>
                 <Copyright>
                     Handcrafted by me © 2023.
                 </Copyright>

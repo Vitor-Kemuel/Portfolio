@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 export const PageContainer = styled.div`
     width: 100%; 
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
-    padding: 60px 40px 40px;
+    padding: 40px;
+    margin: 0 0 10vh;
 `
 export const Perfil = styled.img`
     border-radius: 70%;
@@ -42,11 +43,6 @@ export const Column = styled.div`
     align-items: center;
     flex-direction: column;
 `
-export const Space = styled.div`
-    width: 30px;
-    height: 15%;
-`
-
 export const Contact = styled.div`
     display: flex;
     padding: 10px 0 0 0;
@@ -63,5 +59,11 @@ export const IconContainer = styled.a`
         opacity: 0.6;
         cursor:pointer;
     }
-
+`
+export const ArrowDown = styled.p`
+    height: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 22px;
+    color: #707070;
 `

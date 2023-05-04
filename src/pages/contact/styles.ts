@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const PageContainer = styled.div`
     width: 100%; 
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
-    padding: 40px 40px 40px;
+    padding: 0px 40px 40px;
 `
 export const Title = styled.h2`
     font-size: 42px;
@@ -13,7 +13,7 @@ export const Title = styled.h2`
     color: #000;
     margin: 0 0 15px;
     border-bottom: solid 3px;
-    padding: 0 20px 0;
+    padding: 0 20px 0 0;
     @media screen and (max-width: 500px){
         &{
             font-size: 35px;
@@ -54,7 +54,6 @@ export const IconContainer = styled.a`
         opacity: 0.6;
         cursor:pointer;
     }
-
 `
 export const Space = styled.div`
     width: 30px;
@@ -63,4 +62,7 @@ export const Space = styled.div`
 export const Copyright = styled.p`
     font-size: 12px;
     color: #808080;
+    height: 100%;
+    display: flex;
+    align-items: end;
 `

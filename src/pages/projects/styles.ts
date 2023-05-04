@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 export const PageContainer = styled.div`
     width: 100%; 
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
-    padding: 40px 40px 40px;
+    margin: 0 0 10vh;
+    padding: 0 40px 40px;
 `
 export const Title = styled.h2`
     font-size: 42px;
@@ -14,7 +15,7 @@ export const Title = styled.h2`
     color: #000;
     margin: 0 0 15px;
     border-bottom: solid 3px;
-    padding: 0 20px 0;
+    padding: 0 20px 0 0;
     @media screen and (max-width: 500px){
         &{
             font-size: 35px;
@@ -63,7 +64,7 @@ export const CardProject = styled.div`
     border-radius: 10px;
     flex-direction: column;
     padding: 10px;
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 700px){
         &{
             width: 100%;
             margin: 0 0 15px 0;
@@ -92,4 +93,11 @@ export const CardIcon = styled.a`
 `
 export const CardDescription = styled.p`
     font-size: .8rem;
+`
+export const ArrowDown = styled.p`
+    height: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 22px;
+    color: #707070;
 `

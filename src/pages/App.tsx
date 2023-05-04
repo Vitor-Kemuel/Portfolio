@@ -1,3 +1,4 @@
+import NavBar from "../components/navBar";
 import Contact from "./contact";
 import Presentation from "./presentation";
 import Projects from "./projects";
@@ -5,9 +6,10 @@ import Projects from "./projects";
 function App() {
   return (
     <div className="App">
-      <Presentation/>
-      <Projects/>
-      <Contact/>
+      <NavBar />
+      <Presentation />
+      <Projects />
+      <Contact />
     </div>
   );
 }
