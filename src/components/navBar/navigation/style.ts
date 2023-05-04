@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const NavItem = styled.li`
     display: inline;
     height: 40px;
-    margin-left: 2rem;
     color: #333;
     border-radius: 5px;
     padding: 5px 10px;

@@ -41,12 +41,10 @@ export const Menu = styled.ul<{ isOpen: boolean }>`
     transition: transform 0.3s ease-in-out;
 
     @media (max-width: 768px) {
-        transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 0;
-        right: ${({ isOpen }) => (isOpen ? "0" : "100%")}; // aqui mudamos de left para right
+        left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
         width: 100%;
         background-color: rgb(240, 240, 240);
         top: 10vh;
