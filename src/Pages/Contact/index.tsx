@@ -1,18 +1,20 @@
-import { About, Column, Copyright, Email, IconContainer, PageContainer, Row, Title } from "./styles";
+import { Copyright, Email, IconContainer, Space } from "./styles";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { Column, PageContainer, Paragraph, Row, Title } from "../../Components";
 
 const Contact = () => {
-    return(
+    return (
         <PageContainer id="Contact">
+            <Space />
             <Column>
                 <Row>
                     <Title>{"<Contato />"}</Title>
                 </Row>
                 <Row>
-                    <About>
+                    <Paragraph>
                         Sinta-se à vontade para entrar em contato se tiver alguma dúvida
                         ou se apenas deseja se conectar!
-                    </About>
+                    </Paragraph>
                 </Row>
                 <Row>
                     <Email href="mailto:kemuvitor@gmail.com">
